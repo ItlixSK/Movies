@@ -1,9 +1,14 @@
 package com.example.movies.data.model
 
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+
+@Entity(tableName = "moviesTable")
 data class ResultMovies(
     val adult: Boolean,
     val backdrop_path: String,
     val genre_ids: List<Int>,
+    @PrimaryKey(autoGenerate = true)
     val id: Int,
     val original_language: String,
     val original_title: String,
