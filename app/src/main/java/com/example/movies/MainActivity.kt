@@ -27,6 +27,9 @@ class MainActivity : AppCompatActivity() {
             navController = Navigation.findNavController(MAIN,R.id.navHost)
 
         }
-
+    }
+    override fun onDestroy() {
+        super.onDestroy()
+        mBinding = null
     }
 }

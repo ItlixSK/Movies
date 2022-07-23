@@ -7,7 +7,7 @@
     tools:context=".ui.favorite.FavoriteFragment">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/startRecyclerView"
+        android:id="@+id/favoriteRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/black"
